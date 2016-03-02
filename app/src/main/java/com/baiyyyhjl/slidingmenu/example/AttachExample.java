@@ -1,12 +1,12 @@
 package com.baiyyyhjl.slidingmenu.example;
 
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
+import android.support.v7.app.AppCompatActivity;
 
 import com.baiyyyhjl.slidingmenu.R;
 import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 
-public class AttachExample extends FragmentActivity {
+public class AttachExample extends AppCompatActivity {
 
 	private SlidingMenu menu;
 

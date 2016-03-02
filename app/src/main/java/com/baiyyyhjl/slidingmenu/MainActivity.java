@@ -6,12 +6,13 @@ import android.os.Bundle;
 import android.widget.ArrayAdapter;
 
 import com.baiyyyhjl.slidingmenu.example.AttachExample;
+import com.baiyyyhjl.slidingmenu.example.PropertiesActivity;
 
 
 public class MainActivity extends LauncherActivity {
 
-    String[] names = new String[]{"AttachExample"};
-    Class<?>[] classes = {AttachExample.class};
+    String[] names = new String[]{"AttachExample", "PropertiesActivity"};
+    Class<?>[] classes = {AttachExample.class, PropertiesActivity.class};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
