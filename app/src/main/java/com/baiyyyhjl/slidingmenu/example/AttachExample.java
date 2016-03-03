@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
 import com.baiyyyhjl.slidingmenu.R;
+import com.baiyyyhjl.slidingmenu.example.fragments.SampleListFragment;
 import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 
 public class AttachExample extends AppCompatActivity {

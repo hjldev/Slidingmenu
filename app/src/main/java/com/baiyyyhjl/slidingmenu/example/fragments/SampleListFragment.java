@@ -1,4 +1,4 @@
-package com.baiyyyhjl.slidingmenu.example;
+package com.baiyyyhjl.slidingmenu.example.fragments;
 
 import android.content.Context;
 import android.os.Bundle;

@@ -1,39 +1,36 @@
 package com.baiyyyhjl.slidingmenu.example;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.app.ListFragment;
-import android.support.v4.view.ViewPager;
 
 
 import com.baiyyyhjl.slidingmenu.R;
+import com.baiyyyhjl.slidingmenu.example.fragments.OnePageFragment;
+import com.baiyyyhjl.slidingmenu.example.fragments.SampleListFragment;
 import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 import com.jeremyfeinstein.slidingmenu.lib.app.SlidingFFragmentActivity;
 
 public class BaseActivity extends SlidingFFragmentActivity {
 
-	protected ListFragment mFrag;
+	protected Fragment mFrag;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
-
 		// set the Behind View
+		// 默认是左侧滑，默认的左侧滑页面
 		setBehindContentView(R.layout.menu_frame);
 		if (savedInstanceState == null) {
 			FragmentTransaction t = this.getSupportFragmentManager().beginTransaction();
-			mFrag = new SampleListFragment();
+//			mFrag = new SampleListFragment();
+			mFrag = new OnePageFragment();
 			t.replace(R.id.menu_frame, mFrag);
 			t.commit();
 		} else {
-			mFrag = (ListFragment)this.getSupportFragmentManager().findFragmentById(R.id.menu_frame);
+			mFrag = this.getSupportFragmentManager().findFragmentById(R.id.menu_frame);
 		}
 
 		// customize the SlidingMenu

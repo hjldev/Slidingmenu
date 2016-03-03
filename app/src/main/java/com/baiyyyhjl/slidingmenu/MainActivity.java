@@ -6,13 +6,20 @@ import android.os.Bundle;
 import android.widget.ArrayAdapter;
 
 import com.baiyyyhjl.slidingmenu.example.AttachExample;
+import com.baiyyyhjl.slidingmenu.example.BirdActivity;
+import com.baiyyyhjl.slidingmenu.example.FragmentChangeActivity;
+import com.baiyyyhjl.slidingmenu.example.LeftAndRightActivity;
 import com.baiyyyhjl.slidingmenu.example.PropertiesActivity;
+import com.baiyyyhjl.slidingmenu.example.ResponsiveUIActivity;
+import com.baiyyyhjl.slidingmenu.example.ViewPagerActivity;
+import com.baiyyyhjl.slidingmenu.example.anim.CustomAnimation;
 
 
 public class MainActivity extends LauncherActivity {
 
-    String[] names = new String[]{"AttachExample", "PropertiesActivity"};
-    Class<?>[] classes = {AttachExample.class, PropertiesActivity.class};
+    String[] names = new String[]{"AttachExample", "PropertiesActivity", "LeftAndRightActivity", "CustomAnimation", "ViewPagerActivity", "FragmentChangeActivity", "ResponsiveUIActivity", "BirdActivity"};
+    Class<?>[] classes = {AttachExample.class, PropertiesActivity.class, LeftAndRightActivity.class, CustomAnimation.class, ViewPagerActivity.class
+    , FragmentChangeActivity.class, ResponsiveUIActivity.class, BirdActivity.class};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
